@@ -9,7 +9,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
-
 public class MiniGameMainFrame extends JFrame {
 
     public static final Dimension FRAME_SIZE = new Dimension(400, 210);
@@ -17,7 +16,6 @@ public class MiniGameMainFrame extends JFrame {
     public static final Dimension PANEL_GENERATE_FRAZA_SIZE = new Dimension(300, 200);
     public static final Dimension BUTTON_GENERATE_SIZE = new Dimension(100, 50);
 
-    public JPanel panelUpForMenu;
     public JPanel panelGenerateFraza;
     public JPanel panelRezultFraza = new JPanel();
 
@@ -28,7 +26,6 @@ public class MiniGameMainFrame extends JFrame {
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new MigLayout());
-
 
         panelGenerateFraza = new PanelGenerateFraza();
 
@@ -91,7 +88,6 @@ public class MiniGameMainFrame extends JFrame {
                     panelRezultFraza.add(label);
                     panelRezultFraza.revalidate();
                     panelRezultFraza.repaint();
-
                 }
             });
 

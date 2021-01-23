@@ -2,6 +2,7 @@ package serega.myIdealProgect.util;
 
 import java.util.ArrayList;
 
+//TODO: Переделать класс когда пройдем до конца тему коллекции.
 public class VariantsLoader {
 
     public ArrayList<String> firstWordArray = new ArrayList();
@@ -39,7 +40,7 @@ public class VariantsLoader {
         addThirdWordInArray("стоимость");
         addThirdWordInArray("срочно");
 
-        fourthWordArray.add("в");
+        addFourthWordInArray("в");
 
         addFifthWordInArray("Москве");
         addFifthWordInArray("Воронеже");
@@ -61,6 +62,10 @@ public class VariantsLoader {
 
     public void addThirdWordInArray(String text){
         thirdWordArray.add(text);
+    }
+
+    public void addFourthWordInArray(String text){
+        fourthWordArray.add(text);
     }
 
     public void addFifthWordInArray(String text){
